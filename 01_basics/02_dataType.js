@@ -3,7 +3,7 @@
  // js tere is not many data type like other language 
  let  name ="sonu"
  let age = 20
- let isloging = false
+ let isloggedIn = false
 
  // number = 2 to power 53
  // bigint
