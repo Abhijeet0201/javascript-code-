@@ -20,10 +20,22 @@ const jsUser= {
 //console.log(jsUser);
 //console.log(jsUser["email"]);// ya par nahi leta to " " to yea use karte hai.
 //console.log(jsUser.mySym);// line 6 wala lea raha hai hai
-console.log(typeof jsUser.mySym);
-console.log(jsUser[mySym]);// ye line 12 ko print kar waraha hai.
+//console.log(typeof jsUser.mySym);
+//console.log(jsUser[mySym]);// ye line 12 ko print kar waraha hai.
 
 jsUser.email = "sonukumar@gmail.com"// use for changing
-Object.freeze(jsUser);// ye used karne baad kab koi change nahi hoga.
+//Object.freeze(jsUser);// ye used karne baad kab koi change nahi hoga.
 jsUser.email = "sonukumar@gmail.com"// example-> ke lea yea ab change nahi hoga.freeze ke baad
-console.log(jsUser); 
+// console.log(jsUser); 
+
+jsUser.greeting = function(){
+    console.log("Jai Shree Ram");
+}
+
+jsUser.greetingTwo = function(){
+    console.log(`sonu, ${this.name}`);
+}
+console.log(jsUser.greeting());
+console.log(jsUser.greetingTwo());
+
+console.log(jsUser.fullName);
