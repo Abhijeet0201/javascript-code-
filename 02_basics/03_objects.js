@@ -3,7 +3,7 @@
 
 //object literals
 
-const mySym  = Symbol("mykey1")// symole ek primative datatype hai.
+const mySym  = Symbol("key1")// symole ek primative datatype hai.
 
 
 const jsUser= {
