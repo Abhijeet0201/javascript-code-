@@ -3,7 +3,7 @@
 
 //object literals
 
-const mySym  = Symbol("mykey1")
+const mySym  = Symbol("mykey1")// symole ek primative datatype hai.
 
 
 const jsUser= {
@@ -19,9 +19,9 @@ const jsUser= {
 //console.log(jsUser.email); //yaha ye String kude le ta hai yaha .
 //console.log(jsUser);
 //console.log(jsUser["email"]);// ya par nahi leta to " " to yea use karte hai.
-//console.log(jsUser.mySym);// line 6 wala lea raha hai hai
+//console.log(jsUser.mySym);// line 6 wala lea raha hai hai yaha srting ke thra print kar raha hai.
 //console.log(typeof jsUser.mySym);
-//console.log(jsUser[mySym]);// ye line 12 ko print kar waraha hai.
+//console.log(jsUser[mySym]);// ye line 12 ko print kar waraha hai or ye symbol me  print karte hai  
 
 jsUser.email = "sonukumar@gmail.com"// use for changing
 //Object.freeze(jsUser);// ye used karne baad kab koi change nahi hoga.
