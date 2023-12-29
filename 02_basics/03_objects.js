@@ -38,4 +38,6 @@ jsUser.greetingTwo = function(){
 console.log(jsUser.greeting());
 console.log(jsUser.greetingTwo());
 
-console.log(jsUser.fullName);
+//console.log(jsUser.fullName);
+console.log(jsUser.mySym);
+console.log(typeof jsUser.mySym);
