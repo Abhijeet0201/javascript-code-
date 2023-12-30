@@ -48,11 +48,25 @@ const user =[
     }
 ]
 user[1].email
-console.log(user);
-console.log(tinderUser);
+//console.log(user);
+//console.log(tinderUser);
 // these are some method
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+//console.log(Object.keys(tinderUser));
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+const course ={
+    coursename : " js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+ //console.log(course.price);
+ const {courseInstructor } = course
+
+console.log(courseInstructor);// yaha par abe course.nane likhne ka jarut nahi hai base name chaye.
+ const {courseInstructor:Instructor } = course; //aise likhe to ye object destructer method {} kahate hai 
+console.log(Instructor);
+
+
