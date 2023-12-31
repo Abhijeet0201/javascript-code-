@@ -36,11 +36,35 @@ const result = addTwoNumber(5,3)
 function loginUserMessage (username) {
     if(username === undefined){ 
         //(username === undefined) or ye(!usename) same hai  
-        console.log("Please enter a username");
+        //console.log("Please enter a username");
         return // reture use karne ke baad niche ka koi line kam nahi karta hai
     }
     return `${username} just logged in `
 }
 //console.log(loginUserMessage("sonu"));
-console.log(loginUserMessage());
-//function loginUserMessage (username ="sam") { ye jo "sam" ye default value hojaye ga ye print hoga jab ham value nahi le ge like line 45 mea
+//console.log(loginUserMessage());
+//function loginUserMessage (username ="sam") { ye jo "sam" ye default value hojaye ga ye print hoga jab ham value nahi le ge like in line 45 mea.
+
+function calculateCartPrice(...num1){ // ... is called rest operatror that print all no ,we don't use it only first no is printed only.
+    return num1
+}
+console.log(calculateCartPrice(200,400,500));
+const user ={
+    username:"hitesh",
+    price: 199
+}
+function handelObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+//handelObject(user)
+handelObject({
+    username: "sam",
+    price:299
+})
+
+const myNewArray =[200,400, 100, 600]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+//console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,400,500,1000]));
