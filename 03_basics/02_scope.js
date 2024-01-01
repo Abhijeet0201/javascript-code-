@@ -20,3 +20,26 @@ function one(){
     two()
 }
 one()
+
+if(true){
+    const username= "Abhijeet"
+    if(username === "Abhijeet") {
+        const website = "facebook"
+        console.log(username +" "+ website);
+    }
+    // console.log(wesite);
+}
+// console.log(username);
+//************** interesting ************/
+
+console.log(addone(5))
+function addone(num){
+    return num+1
+    
+}
+// yaha  decleration plele horaha initilization se to error show kare ga addtwo se waja se kuki wo var hai.
+//console.log(addTwo(5));
+addTwo(5)
+const addTwo = function (num) {
+    return num+2
+}
