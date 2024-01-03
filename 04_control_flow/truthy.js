@@ -22,6 +22,8 @@ if (Object.keys(emptyObj).length ===0) {
     console.log("Object is empty");
 }
 
+
+
 //Nullish coalescing Operator (??) : null ,undefined
 
 let val1;
@@ -32,6 +34,8 @@ let val1;
 val1 = null ?? 10 ?? 5
 
 console.log(val1);
+
+
 
 // terniary Operator
 //Syntax => (condition) ? true : false
