@@ -2,7 +2,6 @@
 // for Object we mainly use for-in loop
 // for Array we used for of loop.
 
-
 //[" ", " ", " "] //array of string
 //[{ },{ },{ }] array of object
 
