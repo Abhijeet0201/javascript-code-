@@ -20,6 +20,7 @@ for (const key in programming) {
     console.log(programming[key]);
 }
 
+
 /*const map = new Map() // map par iteration nahi hoyta hai
 map.set(`IN`,"India")
 map.set("USA",`united states of America`)
