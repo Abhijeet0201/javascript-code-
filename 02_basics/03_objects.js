@@ -9,17 +9,17 @@ const mySym  = Symbol("key1")// symole ek primative datatype hai.
 const jsUser= {
     name:"Abhijeet",
     fullName:"Abhijeet Kumar",
-    [mySym]: "mykey1", // symbole use karne kele ham [] used karte hai. nahi to ye symbole nahi lega.
+    [mySym]: "mykey1", // symbole use karne ke lea ham [] used karte hai. nahi to ye symbole nahi lega.
     age:21,
     location: "Pagwara",
     email:"sonu@gmail.com",
     isLoggedIn:false,
     lastLogingDay: ["monday" , "Thrusday"]
 }
-//console.log(jsUser.email); //yaha ye String kude le ta hai yaha .
+//console.log(jsUser.email); //yaha ye String automatically leta hai yaha .
 //console.log(jsUser);
 //console.log(jsUser["email"]);// ya par nahi leta to " " to yea use karte hai.
-//console.log(jsUser.mySym);// line 6 wala lea raha hai hai yaha srting ke thra print kar raha hai.
+//console.log(jsUser.mySym);// line 6 wala yaha run  horaha hai yaha srting ke thra print kar raha hai.
 //console.log(typeof jsUser.mySym);
 //console.log(jsUser[mySym]);// ye line 12 ko print kar waraha hai or ye symbol me  print karte hai  
 
