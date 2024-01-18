@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Events JS</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Image</h2>
+    <ul id="Image">
+        <li><img width= "200px" id="photoshop" src="https://images.pexels.com/photos/19748912/pexels-photo-19748912/free-photo-of-silhouette-of-man-in-a-lake-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="photoshop"></li>
+        <li><img width= "200px" id="sea"src="https://images.pexels.com/photos/14661223/pexels-photo-14661223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt=""></li>
+
+        <li><img width= "200px" id="kitten"src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></li>
+
+        <li><img width= "200px" id="puppy" src="https://images.pexels.com/photos/2802418/pexels-photo-2802418.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></li>
+        <li><img width= "200px" id="kitten1" src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></li>
+        <li><a style="color:aliceblue ;" href="https://www.google.com/" id="google">Google</a></li>
+    </ul>
+    
+</body>
+<script>
+    /*document.getElementById("kitten1").onclick = function name(params) {
+       alert("kitten1 clicked")
+    }
+   document.getElementById('sea').addEventListener('click',function(){
+    alert("sea click")
+   })*/
+   //attachEvent
+   // jQuery -On
+   document.getElementById('sea').addEventListener('click',function(e){
+    console.log(e);
+   })
+   // type ,yimestamp, defaultPrevented
+   // traget, toElement, scrElement,cuurentTarget
+   //clientX,clientY,screenX,screenY,
+</script>
+
+</html>
