@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Image</h2>
-    <ul id="Image">
+    <ul id="image">
         <li><img width= "200px" id="photoshop" src="https://images.pexels.com/photos/19748912/pexels-photo-19748912/free-photo-of-silhouette-of-man-in-a-lake-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="photoshop"></li>
         <li><img width= "200px" id="sea"src="https://images.pexels.com/photos/14661223/pexels-photo-14661223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt=""></li>
 
@@ -29,12 +29,36 @@
    })*/
    //attachEvent
    // jQuery -On
-   document.getElementById('sea').addEventListener('click',function(e){
-    console.log(e);
-   })
-   // type ,yimestamp, defaultPrevented
+    // type ,yimestamp, defaultPrevented
    // traget, toElement, scrElement,cuurentTarget
-   //clientX,clientY,screenX,screenY,
+   // clientX,clientY,screenX,screenY
+   // altkey,ctrlkey,shiftkey,keyCode
+
+   /*document.getElementById('image').addEventListener('click',function(e){
+    console.log("click inside the ul");
+   } , false)
+   document.getElementById('kitten').addEventListener('click',function(e){
+    console.log("click kitten");
+    e.stopPropagation()
+   } , false)
+
+   document.getElementById('google').addEventListener('click',function(e){
+       console.log("clicked google");
+       e.preventDefault();
+       e.stopPropagation()
+   },false) */
+
+   document.querySelector('#image').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if (e.target.tagName === "IMG") {
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    }
+    
+   },false)
+
+//removeIt.perentNode.removeChild(removeIt) both work same removeIt.remove()
 </script>
 
 </html>
