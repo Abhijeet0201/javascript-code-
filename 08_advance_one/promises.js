@@ -46,10 +46,60 @@ const promiseFour = new Promise(function (resolve , reject) {
 })
 promiseFour.then((user) =>{
     console.log(user);
-    return user.username
-}).then((username)=>{
+    return user.username, user.password
+})
+.then((username)=>{
     console.log(username);
-}).catch(function (error) {
+})
+.catch(function (error) {
     console.log(error);
 })
+.finally(() => console.log("The promises is resolve or rejected"))
  
+
+
+
+const promiseFive = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        let error = true;
+        if (!error) {
+            resolve({ username :'javaScript',password : "123"})
+        }else {
+            reject('ERROR: JS went wrong')
+        }
+    }, 1000);
+})
+async function consumePromisesFive(params) {
+    try {
+        const response = await promiseFive
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+
+    // yaha bas ye v likh sakate hai
+    //const response = await promiseFive
+    //console.log(response);
+}
+consumePromisesFive()
+
+
+/*async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("error", error);
+    }
+}
+getAllUsers()*/
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
