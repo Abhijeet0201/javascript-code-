@@ -5,5 +5,8 @@ const user = {
     signedIn: true
 }
 
-console.log(user.username)
-console.log("hiii~");
+//console.log(user.username)
+//console.log(user.getUserDetails());
+//console.log(this);
+
+const promiseOne = new Promise()
