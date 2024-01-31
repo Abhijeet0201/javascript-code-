@@ -39,5 +39,4 @@ console.log(userOne.constructor);
 //step2: constructor function called 
 //step3: this new keyword enjected init.
 //step4: then it got implenment
-
 //constructor method is basically reference to its self  
