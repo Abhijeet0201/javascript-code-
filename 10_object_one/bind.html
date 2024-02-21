@@ -6,7 +6,7 @@
     <title>React</title>
 </head>
 <body>
-    <button onclick="handleClick">Click Me</button>
+    <button >Click Me</button>
 </body>
 <Script>
     class React {
@@ -15,10 +15,11 @@
             this.server = "https:// localhost:3000"
             // requirement
             document.querySelector('button')
-            document.addEventListener('click',this.handleClick)
+            document.addEventListener('click',this.handleClick.bind(this))
+            
         } 
         handleClick(){
-            console.log("buttonclick");
+            console.log("button click");
             console.log(this.server);
         }
     }
